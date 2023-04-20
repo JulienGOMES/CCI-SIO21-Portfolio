@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Bibliothèque, fichier css, logo de page -->
+<head>
+	<title>JG Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="shortcut icon" href="Images/Logo_2.png">
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #010101;
+        }
+ 
+        .progress-bar-container:not(:last-child) {
+            margin-bottom: 50px;
+        }
+ 
+        .progress-bar-container h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #eee;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+ 
+		@media (min-width: 1100px) {
+			.progress-bar {
+				width: 800px;
+				height: 10px;
+				margin-top: 10px;
+				border: 1px solid #565656;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgb(245, 159, 0);
+			}
+		}
+		
+		@media (max-width: 1100px) {
+			.progress-bar {
+			max-width:800px;
+			width: auto;
+            height: 10px;
+            margin-top: 10px;
+            border: 1px solid #565656;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(245, 159, 0);
+			}
+		}
+        
+ 
+        .percentage {
+            display: block;
+            height: 100%;
+            background: linear-gradient(to right, blue, red);
+            border-radius: 5px;
+            animation: progress 1500ms ease-in 1;
+        }
+ 
+        .reseau {
+            width: 50%;
+        }
+ 
+        .html_css {
+            width: 40%;
+        }
+ 
+        .sql {
+            width: 20%;
+        }
+ 
+        .python_javascript {
+            width: 10%;
+        }
+ 
+        .francais {
+            width: 100%;
+        }
+ 
+        .anglais {
+            width: 50%;
+        }
+ 
+		.allemand {
+            width: 20%;
+        }
+		
+		.espagnol_portugais {
+            width: 10%;
+        }
+		
+		.teams_outlook {
+            width: 90%;
+        }
+		
+		.docx_ppt_xls {
+            width: 60%;
+        }
+		
+		
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+<!-- Fin -->
+
+
+<!-- page internet-->
+<body>
+
+	<!-- Barre de navigation, façon hamburger -->
+   
+	
+	<!-- Entête de la page -->
+    <header> 
+	
+		<!-- Logo_2 en haut à gauche -->	
+		<div id="logo_fixe">  
+			<img src="Images/Logo_2.png" alt="Logo Julien Gomes"/>
+		</div>
+		<!-- Fin logo_2 -->
+
+		<!-- Intitulé de la page -->
+		<h1 style="color:#FF0000";>COMPETENCES</h1>
+		<!-- Fin de l'intitulé -->
+
+<nav>
+    <label for="toggle"; style="color:#FF0000";>☰</label>
+    <input type="checkbox" id="toggle">
+    <div class="main_pages">
+		<ul>
+            <li>
+                <a href="Index.html">ACCUEIL</a>
+			</li>
+            <li>
+                <a href="Projet.html">PROJET</a>
+            </li>
+            <li>
+                <a href="Competences.html">COMPETENCES</a>
+            </li>
+            <li>
+                <a href="Formation.html">FORMATIONS</a>
+            </li>
+            <li>
+                <a href="Contact.html">CONTACT</a>
+            </li>
+            <li>
+                <a href="Mentions_legale.html">MENTIONS&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;LEGALES</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+		<!-- Fin de la barre de navigation -->
+
+    </header>
+	<!--Fin de l'entête -->
+
+
+	<!-- Corps principal de la page internet -->
+	<main>
+	
+	<!-- Barre de progression -->
+	
+	<div class="skills">
+        <div class="progress-bar-container">
+            <h2>Français</h2>
+            <div class="progress-bar">
+                <span class="percentage francais"></span>
+				<center><p>100%</p></center>
+            </div>
+        </div>
+		
+        <div class="progress-bar-container">
+            <h2>Anglais</h2>
+            <div class="progress-bar">
+                <span class="percentage anglais"></span>
+				<center><p>50%</p></center>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2>Allemand</h2>
+            <div class="progress-bar">
+                <span class="percentage allemand"></span>
+				<center><p>20%</p></center>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2>Espagnol ~ Portugais</h2>
+            <div class="progress-bar">
+                <span class="percentage espagnol_portugais"></span>
+				<center><p>10%</p></center>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2>Teams ~ Outlook</h2>
+            <div class="progress-bar">
+                <span class="percentage teams_outlook"></span>
+				<center><p>90%</p></center>
+            </div>
+        </div>
+ 
+        <div class="progress-bar-container">
+            <h2>Word ~ Powerpoint ~ Excel</h2>
+            <div class="progress-bar">
+                <span class="percentage docx_ppt_xls"></span>
+				<center><p>60%</p></center>
+            </div>
+        </div>
+		
+		<div class="progress-bar-container">
+            <h2>Réseau</h2>
+            <div class="progress-bar">
+                <span class="percentage reseau"></span>
+				<center><p>50%</p></center>
+            </div>
+        </div>
+		
+		<div class="progress-bar-container">
+            <h2>HTML ~ CSS</h2>
+            <div class="progress-bar">
+                <span class="percentage html_css"></span>
+				<center><p>40%</p></center>
+            </div>
+        </div>
+		
+		<div class="progress-bar-container">
+            <h2>SQL</h2>
+            <div class="progress-bar">
+                <span class="percentage sql"></span>
+				<center><p>20%</p></center>
+            </div>
+        </div>
+		
+		<div class="progress-bar-container">
+            <h2>Python ~ Javascript</h2>
+            <div class="progress-bar">
+                <span class="percentage python_javascript"></span>
+				<center><p>10%</p></center>
+            </div>
+        </div>
+		</br>
+    </div>
+	<!--Fin de la barre de progression -->
+		
+	</main>
+	<!-- Fin corps principal de la page internet -->
+
+
+	<!-- Pied de page -->
+	<footer>
+	
+	</footer>
+	<!-- Fin de pied de page -->
+
+</body>
+<!-- Fin de la page internet-->
+
+</html>
